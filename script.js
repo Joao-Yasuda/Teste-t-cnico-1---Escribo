@@ -6,9 +6,11 @@ function teste(){
 
     let numbers =new Array()
 
-    for(let i = 0; i < value ; i++){
-        if((i % 3) == 0 || (i % 5) == 0){
-            numbers.push(i)
+    if(Number.isInteger(+value)){
+        for(let i = 0; i < value ; i++){
+            if((i % 3) == 0 || (i % 5) == 0){
+                numbers.push(i)
+            }
         }
     }
 
